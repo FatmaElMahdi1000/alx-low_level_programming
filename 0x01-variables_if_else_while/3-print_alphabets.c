@@ -11,19 +11,18 @@ int main(void)
 {
 	int ch = 'a';
 	int CH = 'A';
-        /*prints a -z*/
+	/*prints a -z*/
 	while (ch <= 'z')
 	{
 		putchar(ch);
 		ch++;
 	}
-        /*prints A -Z*/
+	/*prints A -Z*/
 	while (CH <= 'Z')
 	{
 		putchar(CH);
 		CH++;
 	}
-	putchar('\n');
-
-        return (0);
-}	
+putchar('\n');
+return (0);
+}
