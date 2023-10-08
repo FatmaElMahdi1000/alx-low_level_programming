@@ -5,18 +5,17 @@
  * Description: print all alphabet letters
  *
  * Return: Always 0 (success)
- */
+*/
 
 int main(void)
 {
 	char ch = 'a';
 
 	while (ch <= 'z')
-        {
+	{
 		putchar(ch);
-	        ch++;
+		ch++;
 	}
-        putchar('\n');
-       
+	putchar('\n');
 	return (0);
 }
