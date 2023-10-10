@@ -8,15 +8,13 @@
 */
 void print_alphabet_x10(void)
 {
-	int line, ch;
+	int line, j;
 
 	for (line = 0; line <= 9; line ++)
 	{
-		int ch;
-
-		for (ch = 'a'; ch <= 'z'; ch++)
+		for (j = 'a'; j <= 'z'; j++)
 		{
-			_putchar(ch);
+			_putchar(j);
 
 		}
 		_putchar('\n');
