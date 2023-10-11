@@ -23,14 +23,14 @@ int main(void)
 			{
 				if (i != j && j != F && i < j && j < F)
 				{
-					_putchar(i + 48);
-					_putchar(j + 48);
-					_putchar(F + 48);
+					putchar(i + 48);
+					putchar(j + 48);
+					putchar(F + 48);
 
 					if (i + j + F != 24)
 					{
-						_putchar(',');
-						_putchar(' ');
+						putchar(',');
+						putchar(' ');
 					}
 				}
 				F++;
@@ -39,7 +39,7 @@ int main(void)
 		}
 		i++;
 	}
-	_putchar('\n');
+	putchar('\n');
 
 	return (0);
 }
