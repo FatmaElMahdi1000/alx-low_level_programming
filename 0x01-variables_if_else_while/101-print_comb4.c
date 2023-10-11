@@ -21,7 +21,7 @@ int main(void)
 
 			while (F <= 0)
 			{
-				if (i != j && j != F && i < j && j < F)
+				if (i != j && i < j && j != F && j < F)
 				{
 					putchar(i + 48);
 					putchar(j + 48);
