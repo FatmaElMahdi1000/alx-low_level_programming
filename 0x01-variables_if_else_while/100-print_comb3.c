@@ -18,8 +18,8 @@ int main(void)
 		{
 			if (i != j && i < j)
 			{
-				putchar(j + 48);
 				putchar(i + 48);
+				putchar(j + 48);
 
 				if (i + j != 17)
 				{
@@ -33,5 +33,5 @@ int main(void)
 	}
 	putchar('\n');
 
-	return (0);
+	return (0)
 }
