@@ -2,7 +2,7 @@
 #include <stdio.h>
 
 /**
- * isupper - check the code.
+ * _isupper - check if c is upper.
  *
  * @c: alphabet input
  *
