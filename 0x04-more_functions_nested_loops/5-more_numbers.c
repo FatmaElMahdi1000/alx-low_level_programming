@@ -1,32 +1,28 @@
 #include "main.h"
 /**
  * more_numbers - prints 10 times the numbers, from 0 to 14
- * @i - for lines
- * @j - for numbers 
- * @F - count
+ * @row - for lines
+ * @count - for numbers
+ * @num - count
  *
  * Return: Always 0 (success)
 */
 void more_numbers(void)
 {
-	int i = 0, j, F;
+	int num, row, count;
 
-	while (i <= 10)
+	for (row = 1; row <= 10; row++)
 	{
-		int j = 0;
-
-		while (j <= 14)
+		for (count = 0; count <= 14; count++)
 		{
-			F = j;
-			if (F > 9)
-			{
-				_putchar(j + 48);
-				i = F % 10;
-				j++;
-			}
-			_putchar(j + 48);
-			i++;
+			num = count;
+				if (count > 9)
+				{
+					_putchar(1 + 48);
+					num = count % 10;
+				}
+			_putchar(num + 48);
 		}
 		_putchar('\n');
-
+	}
 }
