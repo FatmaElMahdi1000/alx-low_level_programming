@@ -5,7 +5,7 @@
  * @n : the number of times the _ character should be printed
 */
 
-void print_diagonal(int n)
+void print_line(int n)
 {
 	int new;
 
@@ -14,7 +14,7 @@ void print_diagonal(int n)
 	else
 	{
 		for (new = 1; new <= n; new++)
-			_putchar('_')
+			_putchar('_');
 		_putchar('\n');
 	}
 }
