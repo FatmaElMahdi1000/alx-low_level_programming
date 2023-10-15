@@ -2,10 +2,9 @@
 /**
  * print_line - draws a straight line in the terminal.
  *
- * @n : the number of time the character should be printed
- *
- * Return: Always 0 (success)
+ * @n : the number of times the _ character should be printed
 */
+
 void print_line(int n)
 {
 	int new;
