@@ -4,7 +4,7 @@
 /**
  * islower - whether it's a lower case
  *
- * @c1: character
+ * @c: character
  *
  * Return: 1 if true, 0 if false
 */
@@ -16,7 +16,7 @@ int islower(char c)
 }
 
 /**
- * is Delimiter - whether assici is a delimiter
+ * isDelimiter - whether assici is a delimiter
  *
  * @c: character
  *
@@ -25,12 +25,12 @@ int islower(char c)
 int isDelimiter(char c)
 {
 	int i;
-	char deliniter [] = " \t\n, .!?\" () ()";
+	char delimiter[] = " \t\n, .!?\" () ()";
 
 	for (i = 0; i < 12; i++)
-		if (c == delimiter [i])
+		if (c == delimiter[i])
 			return (1);
-	returm (0);
+	return (0);
 }
 
 /**
@@ -48,7 +48,7 @@ char *cap_string(char *s)
 	{
 		if (isDelimiter(*s))
 			foundDelimit = 1;
-		else if (isLower(*s) && foundDelimit)
+		else if (islower(*s) && foundDelimit)
 		{
 			*s -= 32;
 			foundDelimit = 0;
