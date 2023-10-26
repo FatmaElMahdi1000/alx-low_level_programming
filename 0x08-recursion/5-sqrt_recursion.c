@@ -2,7 +2,7 @@
 #include <math.h>
 /**
  * _sqrt_recursion -  returns the natural square root
- *
+ * @val: no.
  * @n: number
  *
  * Return: 0 sqr, -1 if no sqr
@@ -26,6 +26,6 @@ int square(int n, int val)
 		return (val);
 	else if (val * val < n)
 		return (square(n, val + 1));
-	else 
+	else
 		return (-1);
 }
