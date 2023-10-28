@@ -1,4 +1,4 @@
-#include"main.h"
+#include<stdio.h>
 /**
  * main - Entry point
  *
@@ -6,7 +6,7 @@
  * @argc: count
  * @argv: strings
  *
- * Return: 0 (success)
+ * Return: (0) success
 */
 
 int main(int argc, char const *argv[])
