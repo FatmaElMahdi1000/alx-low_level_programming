@@ -5,17 +5,15 @@
  * main - program that multiplies two numbers
  * @argc: num.
  * @argv: list
- * Return: (0) success, non-zero fail
+ * Return: (0)-success, non-zero fail
 */
 int main(int argc, char *argv[])
 {
 	int result;
-	int i;
-	int j;
-
+	
 	if (argc == 3)
 	{
-		result = atoi(argv[i]) * atoi(argv[j]);
+		result = atoi(argv[1]) * atoi(argv[2]);
 		printf("%d\n", result);
 	}
 	else
