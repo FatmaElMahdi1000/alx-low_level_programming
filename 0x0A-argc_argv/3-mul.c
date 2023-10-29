@@ -3,10 +3,9 @@
 
 /**
  * main - program that multiplies two numbers
- *
  * @argc: num.
  * @argv: list
- * Return: (0)
+ * Return: (0) success, non-zero fail
 */
 int main(int argc, char *argv[])
 {
