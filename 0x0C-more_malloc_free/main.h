@@ -2,6 +2,7 @@
 #define MAIN_FILE
 
 #include<stdio.h>
+#include<stdlib.h>
 int _putchar(char c);
 int _isupper(int c);
 int _isdigit(int c);
@@ -41,6 +42,8 @@ void *malloc_checked(unsigned int b);
 char *string_nconcat(char *s1, char *s2, unsigned int n);
 void *_calloc(unsigned int nmemb, unsigned int size);
 int *array_range(int min, int max);
+void *_calloc(unsigned int nmemb, unsigned int size);
+char *string_nconcat(char *s1, char *s2, unsigned int n);
 
 
 

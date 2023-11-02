@@ -1,7 +1,4 @@
 #include"main.h"
-#include<stdio.h>
-#include<stdlib.h>
-
 /**
  * string_nconcat - point to a newly allocated space in memory
  *
@@ -14,10 +11,7 @@
 char *string_nconcat(char *s1, char *s2, unsigned int n)
 {
 	char *str;
-	int i;
-	int j;
-	int s1_length;
-	int s2_length;
+	unsigned int j, i, s1_length, s2_length;
 
 	if (s1 == NULL)
 		s1 = "";
