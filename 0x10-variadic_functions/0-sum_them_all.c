@@ -2,7 +2,7 @@
 
 /**
  * sum_them_all - sums variable argument
- * @n: int.
+ * @n: int
  * @...: int list
  *
  * Return : the intger sum
