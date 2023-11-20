@@ -1,5 +1,4 @@
 #include "lists.h"
-
 /**
  *print_listint - function
  * @h: pointer to the start node
