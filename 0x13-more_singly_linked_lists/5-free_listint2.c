@@ -2,8 +2,8 @@
 
 /**
  *free_listint2 - function
- *
- *
+ *@head: pointer to a pointer
+ *Return: Null
  *
 */
 
