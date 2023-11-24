@@ -3,7 +3,7 @@
 /**
  * binary_to_uint - function
  * @b: int
- *Return: 0 or 1
+ *Return 0 or int
  *
 */
 
