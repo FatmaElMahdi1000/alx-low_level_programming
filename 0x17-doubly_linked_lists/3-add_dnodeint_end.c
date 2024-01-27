@@ -20,14 +20,17 @@ dlistint_t *add_dnodeint_end(dlistint_t **head, const int n)
 		return (NULL);
 	}
 
-	if (*head == NULL)
-	{
-		tp = *head;
-		return (tp);
-	}
-	temp3->prev = NULL;
 	temp3->n = n;
 	temp3->next = NULL;
+
+	if (*head == NULL)
+	{
+		temp3->prev = NULL;
+		*head = temp3;
+		return (temp3);
+	}
+
+	tp = *head;
 
 	while (tp->next != NULL)
 	{
@@ -36,6 +39,6 @@ dlistint_t *add_dnodeint_end(dlistint_t **head, const int n)
 
 	tp->next = temp3;
 	temp3->prev = tp;
-	return (tp);
+	return (temp3);
 
 }
