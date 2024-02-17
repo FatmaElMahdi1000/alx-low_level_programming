@@ -2,8 +2,7 @@
 
 /**
  *hash_table_create - creating H.table
- *@key: element in the hash table
- *@value: element in the hash table
+ *@size: table size
  *Return: pointer
  */
 
