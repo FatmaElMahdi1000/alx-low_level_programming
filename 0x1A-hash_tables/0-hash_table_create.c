@@ -11,16 +11,25 @@
 
 hash_table_t *hash_table_create(unsigned long int size)
 {
+	hash_table_t *ht;
+	unsigned long int i;
+
 	/**ht = table**/
-	hash_table_t *ht = (hash_table_t *)malloc(sizeof(hash_table_t));
+	ht = malloc(sizeof(hash_table_t));
+
+	if (ht == NULL)
+		return (NULL);
 
 	ht->size = size;
 	ht->count = 0;
-	ht->items = (hash_table **)calloc(ht->size, sizeof(hash_table *));
+	ht->items = calloc(ht->size, sizeof(hash_table *));
+
+	if (ht->items == NULL)
+		return (NULL);
 
 	for (int i = 0; i < ht->size; i++)
 	{
-		ht->items = NULL;
+		ht->items[i] = NULL;
 	}
 	return (ht);
 }
