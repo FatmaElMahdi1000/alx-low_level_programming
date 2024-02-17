@@ -7,18 +7,6 @@
  *Return: pointer
  */
 
-hash_table *create_item(char *key, int *value)
-{
-	/**Creates a pointer to a new HashTable item.**/
-	hash_table *item = (hash_table *)malloc(sizeof(hash_table));
-
-	item->key = (char *)malloc(strlen(key) + 1);
-	item->value = (int *)malloc(strlen(value) + 1);
-	strcpy(item->key, key);
-	strcpy(item->value, value);
-	return (item);
-}
-
 /**Create the table by allocating memory and setting size, count, and items:**/
 
 hash_table_t *hash_table_create(unsigned long int size)
