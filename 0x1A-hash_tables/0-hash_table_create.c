@@ -10,15 +10,19 @@
 
 hash_table_t *hash_table_create(unsigned long int size)
 {
-	int count;
 	/**table is declared by ht**/
 	hash_table_t *ht = (hash_table_t *) malloc(sizeof(hash_table_t *));
 
+	if (ht == NULL)
+		return (NULL);
 	ht->size = size;
-	ht->count = 0;
 	ht->array = (hash_node_t **) calloc(ht->size, (hash_node_t *));
-
-	for (int i = 0; i < ht->size; i++)
+	if (ht->array == NULL)
+	{
+		free(ht);
+		return (NULL);
+	}
+	for (int i = 0; i < size; i++)
 	{
 		ht->array[i] = NULL;
 		return (ht);
