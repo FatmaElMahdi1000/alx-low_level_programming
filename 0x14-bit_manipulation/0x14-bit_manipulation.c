@@ -8,21 +8,8 @@
 
 int get_endianness(void)
 {
-	unsigned long int number;
+	unsigned long int number = 1;
 
-	if (number != 1)
-	{
-		printf("NOT A NUMBER");
-		return (-1);
-	}
-	if (number == 1)
-	{
-		printf("Little Endian\n");
-	}
-	else
-	{
-		printf("Big Endian\n");
-	}
-	return (0);
+	return (*(char *)&number);
 
 }
