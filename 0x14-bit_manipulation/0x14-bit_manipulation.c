@@ -8,13 +8,9 @@
 
 int get_endianness(void)
 {
-	int number;
-	int value;
+	unsigned long int number;
 
-	printf("Enter the Number: ");
-	value = scanf("%d", &number);
-
-	if (value != 1)
+	if (number != 1)
 	{
 		printf("NOT A NUMBER");
 		return (-1);
