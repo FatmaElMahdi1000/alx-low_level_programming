@@ -28,11 +28,6 @@ void print_times_table(int n)
 				printf(" ,");
 			}
 
-			else if (k == 0 && j == 0)
-			{
-				printf("%d", k);
-			}
-
 			else if (k < 10)
 			{
 				printf("   %d", k);
