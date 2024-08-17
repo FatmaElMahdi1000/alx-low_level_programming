@@ -8,28 +8,39 @@
 */
 void times_table(void)
 {
-	int num, mult, prod;
+	int i;
+	int j;
+	int k;
 
-	for (num = 0; num <= 9; num++)
+	for (i = 0; i < n; i++)
 	{
-		_putchar(48);
-		for (mult = 1; mult <= 9; mult++)
+		for (j = 0; j < n; j++)
 		{
-			_putchar(',');
-			_putchar(' ');
+			k = i * j;
 
-			prod = num * mult;
+			if (j > 0)
+			{
+				printf(",");
+			}
 
-			if (prod <= 9)
+			if (k < 10)
+
 			{
-				_putchar(' ');
+				printf("  %d", k);
 			}
-			else
+
+			else if (k > 10)
+
 			{
-				_putchar((prod / 10) + 48);
+				printf(" %d", k);
 			}
-			_putchar((prod % 10) + 48);
+
+			else if (k == 10)
+
+			{
+				printf(" %d", k);
+			}
 		}
-		printf("\n");
+		printf(" \n");
 	}
 }
