@@ -16,22 +16,25 @@ void times_table(void)
 	{
 		for (j = 0; j < 10; j++)
 		{
-		k = i * j;
-		if (j > 0)
-		{
-			printf(",");
-		}
-		if (k < 10)
-		{
-			printf("  %d", k);
-		}
-		else if (k > 10)
-		{
-			printf(" %d", k);
+			k = i * j;
+
+			if (j > 0)
+			{
+				printf(",");
+			}
+
+			if (k < 10)
+			{
+				printf("  %d", k);
+			}
+			else if (k > 10)
+			{
+				printf(" %d", k);
+			}
 			else if (k == 10)
 			{
 				printf(" %d", k)
 			}
 			printf(" \n");
 		}
-}
+	}
