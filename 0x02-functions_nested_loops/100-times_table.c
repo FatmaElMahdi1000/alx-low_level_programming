@@ -2,13 +2,16 @@
 
 /**
  * print_times_table - creating a table
+ * Description: table
  * @n: table size
  *
  * Return: a tablen
 **/
 void print_times_table(int n)
 {
-	int i, int j, int k;
+	int i;
+	int j;
+	int k;
 
 	if (n > 15 || n < 0)
 	{
