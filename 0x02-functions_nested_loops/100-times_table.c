@@ -9,9 +9,7 @@
 **/
 void print_times_table(int n)
 {
-	int i;
-	int j;
-	int k;
+	int i, int j, int k;
 
 	if (n > 15 || n < 0)
 	{
@@ -30,7 +28,12 @@ void print_times_table(int n)
 				printf(" ,");
 			}
 
-			if (k < 10)
+			if (k == 0 && j == 0)
+			{
+				printf("%d", k);
+			}
+
+			else if (k < 10)
 			{
 				printf("   %d", k);
 			}
