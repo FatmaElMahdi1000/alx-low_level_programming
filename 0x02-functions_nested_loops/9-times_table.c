@@ -8,10 +8,7 @@
 */
 void times_table(void)
 {
-	int i;
-	int j;
-	int k;
-	int n = 9;
+	int i, int j, int k, int n = 9;
 
 	for (i = 0; i < n; i++)
 	{
@@ -21,27 +18,29 @@ void times_table(void)
 
 			if (j > 0)
 			{
-				printf(",");
+				_putchar(',');
 			}
 
 			if (k < 10)
 
 			{
-				printf("  %d", k);
+				_putchar(' ');
+				_putchar(' ');
+				_putchar(k + '0');
 			}
-
 			else if (k > 10)
-
 			{
-				printf(" %d", k);
+				_putchar(' ');
+				_putchar(k + '0');
 			}
-
 			else if (k == 10)
 
 			{
-				printf(" %d", k);
+				_putchar(' ');
+				_putchar(k + '0');
 			}
 		}
-		printf(" \n");
+		_putchar(' ');
+		_putchar('\n');
 	}
 }
