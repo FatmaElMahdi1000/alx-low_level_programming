@@ -33,7 +33,7 @@ void times_table(void)
 			}
 			else if (k == 10)
 			{
-				printf(" %d", k)
+				printf(" %d", k);
 			}
 		}
 			printf(" \n");
