@@ -8,23 +8,23 @@
  * Return: fibonacci sequence
 */
 
-int fc(int n)
+unsigned long long int fc(int n)
 {
 	int i;
-	int sum;
-	unsigned long long number1 = 1;
-	unsigned long long number2 = 2;
+	unsigned long long int sum;
+	unsigned long long int number1 = 1;
+	unsigned long long int number2 = 2;
 
 	if (n <= 0)
 	{
 		fprintf(stderr, "ERROR\n");
 	}
-	printf("%d, %d, ", number1, number2);
+	printf("%lld, %lld, ", number1, number2);
 
 	for (i = 2; i < n; i++)
 	{
 		sum = number1 + number2;
-		printf("%d", sum);
+		printf("%lld", sum);
 
 		number1 = number2;
 
