@@ -2,9 +2,11 @@
 /**
  * multiples - Getting the sum of multiples
  *
+ * Description: Computes the sum
+ *
  * @n: user input
  *
- * Return: multiples of 3 or 5
+ * Return: multiples of 3 or 5, 0 means success
 **/
 
 int multiples(int n)
@@ -27,5 +29,22 @@ int multiples(int n)
 		}
 		printf("%d\n", sum);
 	}
+	return (0);
+}
+
+/**
+ * main - Entry point
+ *
+ * Description: This is the starting point
+ *
+ * Return: 0 means success
+**/
+
+int main(void)
+{
+	int n = 1024;
+
+	multiples(n);
+
 	return (0);
 }
