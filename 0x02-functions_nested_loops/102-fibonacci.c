@@ -12,8 +12,8 @@ int fc(int n)
 {
 	int i;
 	int sum;
-	int number1 = 1;
-	int number2 = 2;
+	unsigned long long number1 = 1;
+	unsigned long long number2 = 2;
 
 	if (n <= 0)
 	{
