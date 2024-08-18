@@ -1,4 +1,4 @@
-#include "main.h"
+#include"main.h"
 /**
  * multiples - Getting the sum of multiples
  *
