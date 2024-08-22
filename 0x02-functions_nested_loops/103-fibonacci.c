@@ -12,7 +12,6 @@ int fibonacci(int n)
 	int number2 = 2;
 	int i;
 	int sum;
-	int even_numbers[n];
 	int even_sum = 0;
 	int even_count = 0;
 
@@ -33,7 +32,6 @@ int fibonacci(int n)
 		if (sum % 2 == 0)
 
 		{
-			even_numbers[even_count] = sum;
 			even_sum += sum;
 			even_count++;
 		}
