@@ -17,5 +17,7 @@ void print_to_98(int n);
 void print_times_table(int n);
 int multiples(int n);
 int fc(int n);
+int fibonacci(int n);
+
 
 #endif
