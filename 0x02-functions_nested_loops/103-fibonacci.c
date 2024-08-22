@@ -24,7 +24,7 @@ int fibonacci(int n)
 	for (i = 2; i < n; i++)
 	{
 		sum = number1 + number2;
-		if (sum > 4000000)
+		if (sum > 5000000)
 		{
 			break;
 		}
