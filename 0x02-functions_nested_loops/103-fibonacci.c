@@ -49,7 +49,7 @@ int fibonacci(int n)
 
 int main(void)
 {
-	int n = 40;
+	int n = 55;
 
 	fibonacci(n);
 	return (0);
