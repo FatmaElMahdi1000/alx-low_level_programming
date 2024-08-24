@@ -1,60 +1,52 @@
 #include "main.h"
 
 /**
- * _sqrt - find largset number
+ * main - Entry point
  *
- * @x: input
+ * Descrition: get the largest factor
  *
- * Return: square root of x
-*/
-double_ sqrt(double x)
-{
-	float sqrt, tmp;
-
-	sqr = x / 2;
-	tmp = 0;
-
-	while (sqrt != tmp)
-	{
-		tmp = sqrt;
-		sqrt = (x / tmp + tmp) / 2;
-	}
-	return (sqrt);
-}
-
-/**
-* largest_prime_factor - finds and prints number
-*
-* @num: num to find
-*/
-
-void largest_prime_factor(long int num)
-{
-	int prmNu, largest;
-
-	while (num % 2 == 0)
-		num = num / 2;
-	for (prmNu = 3; prmNu <= _sqrt(num); prmNu += 2)
-	{
-		while (num % prmNu == 0)
-		{
-			num = num / prmNu;
-			largest = prmNu;
-		}
-	}
-	if (num > 2)
-		largest = num;
-	printf("%d\n", largest);
-
-}
-/**
- * main - prints the largest prime factor
- *
- *
- * Return: Always 0 (success)
+ * Return: largest factor
 */
 int main(void)
 {
-	largest_prime_factor(612852475142);
+	unsigned long long x;
+	unsigned long long n = 612852475143;
+	unsigned long long *numbers;
+	int i;
+	int j = 0;
+
+	numbers = malloc(100 * sizeof(unsigned long long));
+
+	if (numbers == NULL)
+	{
+		fprintf(stderr, "Memory allocation failed\n");
+		return (1);
+	}
+
+	for (x = 2; x <= n; x++)
+	{
+		while (n)
+		{
+			if (n % x == 0)
+			{
+				printf("%lld\n", x);
+				numbers[j] = x;
+				j++;
+				n = n / x;
+			}
+			else
+			{
+				break;
+			}
+		}
+	}
+
+	for (i = j - 1; i < j; i++)
+	{
+		printf("numbers[%d]: %lld\n", i, numbers[i]);
+	}
+
+	free(numbers);
+
 	return (0);
 }
