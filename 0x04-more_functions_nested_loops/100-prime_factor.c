@@ -1,4 +1,5 @@
 #include "main.h"
+#include <stdlib.h>
 
 /**
  * main - Entry point
@@ -9,13 +10,13 @@
 */
 int main(void)
 {
-	unsigned long long x;
-	unsigned long long n = 612852475143;
-	unsigned long long *numbers;
+	long x;
+	long n = 612852475143;
+	long *numbers;
 	int i;
 	int j = 0;
 
-	numbers = malloc(100 * sizeof(unsigned long long));
+	numbers = malloc(100 * sizeof(long));
 
 	if (numbers == NULL)
 	{
@@ -29,7 +30,7 @@ int main(void)
 		{
 			if (n % x == 0)
 			{
-				printf("%lld\n", x);
+				printf("%ld\n", x);
 				numbers[j] = x;
 				j++;
 				n = n / x;
@@ -43,7 +44,7 @@ int main(void)
 
 	for (i = j - 1; i < j; i++)
 	{
-		printf("numbers[%d]: %lld\n", i, numbers[i]);
+		printf("numbers[%d]: %ld\n", i, numbers[i]);
 	}
 
 	free(numbers);
