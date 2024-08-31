@@ -49,26 +49,3 @@ char *argstostr(int ac, char **av)
 
 	free(s);
 }
-
-/**
- * main - Entry point of the program
- *
- * Description: This program demonstrates the usage of the `argstostr`
- * function by concatenating an array of strings and printing the result.
- *
- * Return: Always 0 (Success)
- */
-
-int main(void)
-{
-	char *args[] = {"I", "will", "show you", "how", "great", "I", "am"};
-	char *result = argstostr(7, args);
-
-	if (result != NULL)
-	{
-		printf("%s\n", result);
-
-		free(result);
-	}
-	return (0);
-}
