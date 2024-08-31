@@ -14,7 +14,6 @@
 char *argstostr(int ac, char **av)
 {
 	int i;
-	int j;
 	char *s;
 	size_t buffer_size = 0;
 
@@ -71,4 +70,5 @@ int main(void)
 
 		free(result);
 	}
+	return (0);
 }
