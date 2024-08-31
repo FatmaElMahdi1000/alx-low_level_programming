@@ -2,6 +2,8 @@
 #define MAIN_FILE
 
 #include<stdio.h>
+#include<stdlib.h>
+#include<string.h>
 int _putchar(char c);
 int _isupper(int c);
 int _isdigit(int c);
@@ -37,7 +39,6 @@ char *_strdup(char *str);
 char *str_concat(char *s1, char *s2);
 int **alloc_grid(int width, int height);
 void free_grid(int **grid, int height);
-
-
+char *argstostr(int ac, char **av);
 
 #endif
